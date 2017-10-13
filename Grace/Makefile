@@ -6,17 +6,17 @@
 #    By: tpayet <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/13 15:42:29 by tpayet            #+#    #+#              #
-#    Updated: 2017/10/13 15:54:23 by tpayet           ###   ########.fr        #
+#    Updated: 2017/10/13 15:50:09 by tpayet           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Colleen
+NAME = Grace
 
 CC = clang
 
 CFLAGS = -Wall -Wextra -Werror -Wpedantic
 
-SRCS = Colleen.c
+SRCS = Grace.c
 
 SRCO = $(SRCS:.c=.o)
 
