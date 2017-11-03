@@ -1,14 +1,16 @@
 #include <stdio.h>
 
-int	main(void)
+void fn(void){}
+int main(void)
 {
 	/*
 		first comment in main
 	*/
 	char *str;
 
-	str = "#include <stdio.h>%c%cint%cmain(void)%c{%c%c/*%c%c%cfirst comment in main%c%c*/%c%cchar *str;%c%c%cstr = %c%s%c;%c%cprintf(str, 10, 10, 9, 10, 10, 9, 10, 9, 9, 10, 9, 10, 9, 10, 10, 9, 34, str, 34, 10, 9, 10, 10, 10, 9, 10, 10);%c}%c/*%c%csecond comment out of main%c*/%c";
-	printf(str, 10, 10, 9, 10, 10, 9, 10, 9, 9, 10, 9, 10, 9, 10, 10, 9, 34, str, 34, 10, 9, 10, 10, 10, 9, 10, 10);
+	str = "#include <stdio.h>%1$c%1$cvoid fn(void){}%1$cint main(void)%1$c{%1$c%2$c/*%1$c%2$c%2$cfirst comment in main%1$c%2$c*/%1$c%2$cchar *str;%1$c%1$c%2$cstr = %3$c%4$s%3$c;%1$c%2$cfn();%1$c%2$cprintf(str, 10, 9, 34, str);%1$c}%1$c/*%1$c%2$csecond comment out of main%1$c*/%1$c";
+	fn();
+	printf(str, 10, 9, 34, str);
 }
 /*
 	second comment out of main
